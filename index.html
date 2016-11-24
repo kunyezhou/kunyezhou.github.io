@@ -313,17 +313,17 @@
 <p><code>$ git config --global user.name &quot;cnfeat&quot;//用户名</code><br><code>$ git config --global user.email  &quot;cnfeat@gmail.com&quot;//填写自己的邮箱</code></p>
 </blockquote>
 <p>然后并不会有什么设置成功的提示，没有提示就说明你成功了~</p>
-<h1 id="Hexo配置"><a href="#Hexo配置" class="headerlink" title="Hexo配置"></a>Hexo配置</h1><h3 id="Hexo安装"><a href="#Hexo安装" class="headerlink" title="Hexo安装"></a>Hexo安装</h3><p>输入以下命令进行Hexo的安装，可能没个人的网速不同，如果很慢就等等吧</p>
+<h1 id="Hexo配置"><a href="#Hexo配置" class="headerlink" title="Hexo配置"></a>Hexo配置</h1><h2 id="Hexo安装"><a href="#Hexo安装" class="headerlink" title="Hexo安装"></a>Hexo安装</h2><p>输入以下命令进行Hexo的安装，可能没个人的网速不同，如果很慢就等等吧</p>
 <blockquote>
 <p><code>npm install hexo-cli -g
 npm install hexo --save</code></p>
 </blockquote>
-<h3 id="Hexo初始化配置"><a href="#Hexo初始化配置" class="headerlink" title="Hexo初始化配置"></a>Hexo初始化配置</h3><p> 安装好Hexo之后，挑一个你喜欢的位置，新建一个文件夹，文件夹目录最好不要有中文。点击鼠标右键 git bash here，并输入一下命令</p>
+<h2 id="Hexo初始化配置"><a href="#Hexo初始化配置" class="headerlink" title="Hexo初始化配置"></a>Hexo初始化配置</h2><p> 安装好Hexo之后，挑一个你喜欢的位置，新建一个文件夹，文件夹目录最好不要有中文。点击鼠标右键 git bash here，并输入一下命令</p>
 <blockquote>
 <p><code>hexo init</code><br><code>npm install</code></p>
 </blockquote>
 <p>不知道大家网速如何，我是等了他半天，校园网连外网网速不好。如果很慢就等等吧~</p>
-<h3 id="Hexo的插件安装"><a href="#Hexo的插件安装" class="headerlink" title="Hexo的插件安装"></a>Hexo的插件安装</h3><p>某韬的教程中仅安装了一个小插件就可以搞定博客的配置，实际上也是这样的。但是我在看其他教程中，很多都提到了要安装一坨插件，作为小白白白白白白白白的我，顺手把其他的插件也都安装了，可能会方便日后的使用吧。现在将这两者插件命令陈列如下。</p>
+<h2 id="Hexo的插件安装"><a href="#Hexo的插件安装" class="headerlink" title="Hexo的插件安装"></a>Hexo的插件安装</h2><p>某韬的教程中仅安装了一个小插件就可以搞定博客的配置，实际上也是这样的。但是我在看其他教程中，很多都提到了要安装一坨插件，作为小白白白白白白白白的我，顺手把其他的插件也都安装了，可能会方便日后的使用吧。现在将这两者插件命令陈列如下。</p>
 <p>ywt同学的插件（必须安装用来上传的插件）</p>
 <blockquote>
 <p><code>npm install hexo-deployer-git --save</code></p>
@@ -338,14 +338,14 @@ npm install hexo --save</code></p>
 hexo s</code></p>
 </blockquote>
 <h1 id="将博客部署到Github-Pages上"><a href="#将博客部署到Github-Pages上" class="headerlink" title="将博客部署到Github Pages上"></a>将博客部署到Github Pages上</h1><p>那么现在本地的博客已经搭建起来了，但是我们只可以通过本地连接查看我们的博客。那么我们现在需要做的就是把本地的博客发布到服务器上，让别人也可以连接我们的博客，而Github Pages就帮我完成了这件事情。但是Github Pages的代码就是寄存在Github上面的。那么接下来我们需要在Github上面创建一个新的项目。</p>
-<h3 id="创建一个新的库"><a href="#创建一个新的库" class="headerlink" title="创建一个新的库"></a>创建一个新的库</h3><p>登陆github，然后点击New repository。建立一个新的库，库的名字要写你的</p>
+<h2 id="创建一个新的库"><a href="#创建一个新的库" class="headerlink" title="创建一个新的库"></a>创建一个新的库</h2><p>登陆github，然后点击New repository。建立一个新的库，库的名字要写你的</p>
 <p><strong>用户名.github.io</strong></p>
 <p>举一个栗子，我注册的时候用户名写的是kunyezhou,那么我的Github Pages对应的库的名字就只能是<a href="http://kunyezhou.github.io" target="_blank" rel="external">kunyezhou.github.io</a>。</p>
-<h3 id="将Hexo文件更新到库"><a href="#将Hexo文件更新到库" class="headerlink" title="将Hexo文件更新到库"></a>将Hexo文件更新到库</h3><p>进入刚才所创建的库，随后点击clone。可以选择SSH或者HTTP。建议选择SSH，复制到剪贴板，大概的内容如下：</p>
+<h2 id="将Hexo文件更新到库"><a href="#将Hexo文件更新到库" class="headerlink" title="将Hexo文件更新到库"></a>将Hexo文件更新到库</h2><p>进入刚才所创建的库，随后点击clone。可以选择SSH或者HTTP。建议选择SSH，复制到剪贴板，大概的内容如下：</p>
 <blockquote>
 <p>git@github.com:kunyezhou/kunyezhou.github.io.git</p>
 </blockquote>
-<h3 id="修改站点配置文件"><a href="#修改站点配置文件" class="headerlink" title="修改站点配置文件"></a>修改站点配置文件</h3><p>在刚才下载Hexo的文件夹下，找到<code>_config.yml</code>的文件，打开并修改其最后几行。<br>将</p>
+<h2 id="修改站点配置文件"><a href="#修改站点配置文件" class="headerlink" title="修改站点配置文件"></a>修改站点配置文件</h2><p>在刚才下载Hexo的文件夹下，找到<code>_config.yml</code>的文件，打开并修改其最后几行。<br>将</p>
 <blockquote>
 <p># Deployment<br>## Docs: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">http://hexo.io/docs/deployment.html</a><br>deploy:<br>type:</p>
 </blockquote>
