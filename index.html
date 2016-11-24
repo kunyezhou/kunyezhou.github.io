@@ -349,16 +349,14 @@ npm install hexo --save</code></p>
 hexo s</code></p>
 </blockquote>
 <h1 id="将博客部署到Github-Pages上"><a href="#将博客部署到Github-Pages上" class="headerlink" title="将博客部署到Github Pages上"></a>将博客部署到Github Pages上</h1><p>那么现在本地的博客已经搭建起来了，但是我们只可以通过本地连接查看我们的博客。那么我们现在需要做的就是把本地的博客发布到服务器上，让别人也可以连接我们的博客，而Github Pages就帮我完成了这件事情。但是Github Pages的代码就是寄存在Github上面的。那么接下来我们需要在Github上面创建一个新的项目。</p>
-<p>###一、创建一个新的库</p>
-<p>登陆github，然后点击New repository。建立一个新的库，库的名字要写你的</p>
+<h3 id="一、创建一个新的库"><a href="#一、创建一个新的库" class="headerlink" title="一、创建一个新的库"></a>一、创建一个新的库</h3><p>登陆github，然后点击New repository。建立一个新的库，库的名字要写你的</p>
 <p><strong>用户名.github.io</strong></p>
 <p>举一个栗子，我注册的时候用户名写的是kunyezhou,那么我的Github Pages对应的库的名字就只能是<a href="http://kunyezhou.github.io" target="_blank" rel="external">kunyezhou.github.io</a>。</p>
-<p>###二、将Hexo文件更新到库</p>
-<p>进入刚才所创建的库，随后点击clone。可以选择SSH或者HTTP。建议选择SSH，复制到剪贴板，大概的内容如下：</p>
+<h3 id="二、将Hexo文件更新到库"><a href="#二、将Hexo文件更新到库" class="headerlink" title="二、将Hexo文件更新到库"></a>二、将Hexo文件更新到库</h3><p>进入刚才所创建的库，随后点击clone。可以选择SSH或者HTTP。建议选择SSH，复制到剪贴板，大概的内容如下：</p>
 <blockquote>
 <p>git@github.com:kunyezhou/kunyezhou.github.io.git</p>
 </blockquote>
-<p>###三、修改站点配置文件<br>在刚才下载Hexo的文件夹下，找到<code>_config.yml</code>的文件，打开并修改其最后几行。<br>将</p>
+<h3 id="三、修改站点配置文件"><a href="#三、修改站点配置文件" class="headerlink" title="三、修改站点配置文件"></a>三、修改站点配置文件</h3><p>在刚才下载Hexo的文件夹下，找到<code>_config.yml</code>的文件，打开并修改其最后几行。<br>将</p>
 <blockquote>
 <p># Deployment<br>## Docs: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">http://hexo.io/docs/deployment.html</a><br>deploy:<br>type:</p>
 </blockquote>
