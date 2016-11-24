@@ -95,7 +95,7 @@ PS：ywt同学的教程是在你已经熟悉了linux与git的">
 首先我们要了解接下来我们的博客是在github pages上套一个Hexo实现的。
 PS：ywt同学的教程是在你已经熟悉了linux与git的">
 <meta property="og:image" content="http://static.zybuluo.com/Fgeienb/erjvvd4c62l1e98l8130crzr/1.png">
-<meta property="og:updated_time" content="2016-11-24T15:34:47.355Z">
+<meta property="og:updated_time" content="2016-11-24T15:39:08.725Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="博客搭建过程及教程（顺便功能测试）">
 <meta name="twitter:description" content="前言第一篇博客主要是为了测试和熟悉各种功能，顺便吐槽一下ywt同学的非人类教程，并给真正的小小白白白白白白白白白白提供一份傻瓜教程。写博客大概就是想记录一些东西给自己看，强迫自己归纳和整理，很多内容都存在局限性，希望大家多提建议，多喷一下，让小野早日进步。
@@ -289,15 +289,15 @@ PS：ywt同学的教程是在你已经熟悉了linux与git的">
       
 
       
-        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>第一篇博客主要是为了测试和熟悉各种功能，顺便吐槽一下ywt同学的非人类教程，并给真正的小小白白白白白白白白白白提供一份傻瓜教程。写博客大概就是想记录一些东西给自己看，强迫自己归纳和整理，很多内容都存在局限性，希望大家多提建议，多喷一下，让小野早日进步。</p>
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>第一篇博客主要是为了测试和熟悉各种功能，顺便吐槽一下ywt同学的非人类教程，并给真正的小小白白白白白白白白白白提供一份傻瓜教程。写博客大概就是想记录一些东西给自己看，强迫自己归纳和整理，很多内容都存在局限性，希望大家多提建议，多喷一下，让小野早日进步。</p>
 <p>首先我们要了解接下来我们的博客是在github pages上套一个Hexo实现的。</p>
 <p>PS：ywt同学的教程是在你已经熟悉了linux与git的前提下进行操作的，像我这种工科狗第一次接触，蒙逼了半天才搭好这个平台。</p>
-<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ul>
+<h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><ul>
 <li>github账号<br>github作为全球最大的基佬交友平台，当然是免费注册的。自己跑去官网注册一个就好了。<strong>一定要给自己想好username，因为你的username和博客地址有关。</strong></li>
 <li>git安装<br>git安装当然也是去官网下载了。不需要翻墙，<a href="https://desktop.github.com/" target="_blank" rel="external">git for Windows</a> </li>
 <li>node.js安装<br>Node.js去官网下载是需要翻墙的。<a href="http://nodejs.org/en/" target="_blank" rel="external">Node.js</a></li>
 </ul>
-<h2 id="Git的配置"><a href="#Git的配置" class="headerlink" title="Git的配置"></a>Git的配置</h2><p>###配置SSH Key<br>一、看看是否存在SSH密钥(keys)<br>在桌面点击右键出现git bash here，会出现<img src="http://static.zybuluo.com/Fgeienb/erjvvd4c62l1e98l8130crzr/1.png" alt="1.png-34.3kB"><br>将代码<code>cd ~/. ssh</code>输入后</p>
+<h1 id="Git的配置"><a href="#Git的配置" class="headerlink" title="Git的配置"></a>Git的配置</h1><p>##配置SSH Key<br>一、看看是否存在SSH密钥(keys)<br>在桌面点击右键出现git bash here，会出现<img src="http://static.zybuluo.com/Fgeienb/erjvvd4c62l1e98l8130crzr/1.png" alt="1.png-34.3kB"><br>将代码<code>cd ~/. ssh</code>输入后</p>
 <p>检查你本机用户home目录下是否存在.ssh目录</p>
 <p>如果，不存在此目录，则进行第二步操作，否则，你本机已经存在ssh公钥和私钥，可以略过第二步，直接进入第三步操作。</p>
 <p>二、创建一对新的SSH密钥(keys)</p>
@@ -339,17 +339,17 @@ PS：ywt同学的教程是在你已经熟悉了linux与git的">
 <p><code>$ git config --global user.name &quot;cnfeat&quot;//用户名</code><br><code>$ git config --global user.email  &quot;cnfeat@gmail.com&quot;//填写自己的邮箱</code></p>
 </blockquote>
 <p>然后并不会有什么设置成功的提示，没有提示就说明你成功了~</p>
-<h2 id="Hexo配置"><a href="#Hexo配置" class="headerlink" title="Hexo配置"></a>Hexo配置</h2><h3 id="一、Hexo安装"><a href="#一、Hexo安装" class="headerlink" title="一、Hexo安装"></a>一、Hexo安装</h3><p>输入以下命令进行Hexo的安装，可能没个人的网速不同，如果很慢就等等吧</p>
+<h1 id="Hexo配置"><a href="#Hexo配置" class="headerlink" title="Hexo配置"></a>Hexo配置</h1><p> 一、Hexo安装<br>输入以下命令进行Hexo的安装，可能没个人的网速不同，如果很慢就等等吧</p>
 <blockquote>
 <p><code>npm install hexo-cli -g
 npm install hexo --save</code></p>
 </blockquote>
-<h3 id="二、Hexo初始化配置"><a href="#二、Hexo初始化配置" class="headerlink" title="二、Hexo初始化配置"></a>二、Hexo初始化配置</h3><p> 安装好Hexo之后，挑一个你喜欢的位置，新建一个文件夹，文件夹目录最好不要有中文。点击鼠标右键 git bash here，并输入一下命令</p>
+<p> 二、Hexo初始化配置<br> 安装好Hexo之后，挑一个你喜欢的位置，新建一个文件夹，文件夹目录最好不要有中文。点击鼠标右键 git bash here，并输入一下命令</p>
 <blockquote>
 <p><code>hexo init</code><br><code>npm install</code></p>
 </blockquote>
 <p>不知道大家网速如何，我是等了他半天，校园网连外网网速不好。如果很慢就等等吧~</p>
-<h3 id="三、Hexo的插件安装"><a href="#三、Hexo的插件安装" class="headerlink" title="三、Hexo的插件安装"></a>三、Hexo的插件安装</h3><p>某韬的教程中仅安装了一个小插件就可以搞定博客的配置，实际上也是这样的。但是我在看其他教程中，很多都提到了要安装一坨插件，作为小白白白白白白白白的我，顺手把其他的插件也都安装了，可能会方便日后的使用吧。现在将这两者插件命令陈列如下。</p>
+<p> 三、Hexo的插件安装<br>ywt的教程中仅安装了一个小插件就可以搞定博客的配置，实际上也是这样的。但是我在看其他教程中，很多都提到了要安装一坨插件，作为小白白白白白白白白的我，顺手把其他的插件也都安装了，可能会方便日后的使用吧。现在将这两者插件命令陈列如下。</p>
 <p>ywt同学的插件（必须安装用来上传的插件）</p>
 <blockquote>
 <p><code>npm install hexo-deployer-git --save</code></p>
@@ -375,17 +375,17 @@ npm install hexo-generator-sitemap@1 --save</code></p>
 <p><code>hexo g
 hexo s</code></p>
 </blockquote>
-<h2 id="将博客部署到Github-Pages上"><a href="#将博客部署到Github-Pages上" class="headerlink" title="将博客部署到Github Pages上"></a>将博客部署到Github Pages上</h2><p>那么现在本地的博客已经搭建起来了，但是我们只可以通过本地连接查看我们的博客。那么我们现在需要做的就是把本地的博客发布到服务器上，让别人也可以连接我们的博客，而Github Pages就帮我完成了这件事情。但是Github Pages的代码就是寄存在Github上面的。那么接下来我们需要在Github上面创建一个新的项目。</p>
-<p>###一、创建一个新的库</p>
+<h1 id="将博客部署到Github-Pages上"><a href="#将博客部署到Github-Pages上" class="headerlink" title="将博客部署到Github Pages上"></a>将博客部署到Github Pages上</h1><p>那么现在本地的博客已经搭建起来了，但是我们只可以通过本地连接查看我们的博客。那么我们现在需要做的就是把本地的博客发布到服务器上，让别人也可以连接我们的博客，而Github Pages就帮我完成了这件事情。但是Github Pages的代码就是寄存在Github上面的。那么接下来我们需要在Github上面创建一个新的项目。</p>
+<p>一、创建一个新的库</p>
 <p>登陆github，然后点击New repository。建立一个新的库，库的名字要写你的</p>
 <p><strong>用户名.github.io</strong></p>
 <p>举一个栗子，我注册的时候用户名写的是kunyezhou,那么我的Github Pages对应的库的名字就只能是<a href="http://kunyezhou.github.io" target="_blank" rel="external">kunyezhou.github.io</a>。</p>
-<p>###二、将Hexo文件更新到库</p>
+<p>二、将Hexo文件更新到库</p>
 <p>进入刚才所创建的库，随后点击clone。可以选择SSH或者HTTP。建议选择SSH，复制到剪贴板，大概的内容如下：</p>
 <blockquote>
 <p>git@github.com:kunyezhou/kunyezhou.github.io.git</p>
 </blockquote>
-<p>###三、修改站点配置文件<br>在刚才下载Hexo的文件夹下，找到<code>_config.yml</code>的文件，打开并修改其最后几行。<br>将</p>
+<p>三、修改站点配置文件<br>在刚才下载Hexo的文件夹下，找到<code>_config.yml</code>的文件，打开并修改其最后几行。<br>将</p>
 <blockquote>
 <p># Deployment<br>## Docs: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">http://hexo.io/docs/deployment.html</a><br>deploy:<br>type:</p>
 </blockquote>
@@ -562,7 +562,7 @@ hexo s</code></p>
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#准备工作"><span class="nav-number">2.</span> <span class="nav-text">准备工作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git的配置"><span class="nav-number">3.</span> <span class="nav-text">Git的配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo配置"><span class="nav-number">4.</span> <span class="nav-text">Hexo配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、Hexo安装"><span class="nav-number">4.1.</span> <span class="nav-text">一、Hexo安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、Hexo初始化配置"><span class="nav-number">4.2.</span> <span class="nav-text">二、Hexo初始化配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三、Hexo的插件安装"><span class="nav-number">4.3.</span> <span class="nav-text">三、Hexo的插件安装</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#将博客部署到Github-Pages上"><span class="nav-number">5.</span> <span class="nav-text">将博客部署到Github Pages上</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#准备工作"><span class="nav-number">2.</span> <span class="nav-text">准备工作</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Git的配置"><span class="nav-number">3.</span> <span class="nav-text">Git的配置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo配置"><span class="nav-number">4.</span> <span class="nav-text">Hexo配置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#将博客部署到Github-Pages上"><span class="nav-number">5.</span> <span class="nav-text">将博客部署到Github Pages上</span></a></li></ol></div>
             
           </div>
         </section>
